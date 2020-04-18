@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L resistor0.25w:RES R1
+U 1 1 5E055B39
+P 3650 5350
+F 0 "R1" V 3953 5271 60  0000 R CNN
+F 1 "5.6K" V 3847 5271 60  0000 R CNN
+F 2 "lib:RES" H 3900 5015 60  0001 C CNN
+F 3 "" H 3650 5350 60  0000 C CNN
+	1    3650 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L resistor0.25w:RES R2
+U 1 1 5E055C0F
+P 4000 5350
+F 0 "R2" V 4303 5271 60  0000 R CNN
+F 1 "10K" V 4197 5271 60  0000 R CNN
+F 2 "lib:RES" H 4250 5015 60  0001 C CNN
+F 3 "" H 4000 5350 60  0001 C CNN
+	1    4000 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L resistor0.25w:RES R3
+U 1 1 5E055E4E
+P 5300 4250
+F 0 "R3" V 5603 4171 60  0000 R CNN
+F 1 "10K" V 5497 4171 60  0000 R CNN
+F 2 "lib:RES" H 5550 3915 60  0001 C CNN
+F 3 "" H 5300 4250 60  0001 C CNN
+	1    5300 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 4650 4000 4650
+Wire Wire Line
+	4000 4650 4000 4850
+Wire Wire Line
+	4150 4450 3650 4450
+Wire Wire Line
+	3650 4450 3650 4850
+Wire Wire Line
+	4000 5350 3650 5350
+Connection ~ 4000 5350
+$Comp
+L resistor0.25w:RES R4
+U 1 1 5E05A091
+P 5300 5250
+F 0 "R4" V 5603 5171 60  0000 R CNN
+F 1 "18K" V 5497 5171 60  0000 R CNN
+F 2 "lib:RES" H 5550 4915 60  0001 C CNN
+F 3 "" H 5300 5250 60  0001 C CNN
+	1    5300 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 5350 5300 5250
+Connection ~ 5300 5350
+Connection ~ 5300 3750
+$Comp
+L Supply:GND #GND01
+U 1 1 5E064491
+P 5300 5450
+F 0 "#GND01" H 5300 5450 50  0001 C CNN
+F 1 "GND" H 5300 5329 59  0000 C CNN
+F 2 "" H 5300 5450 50  0001 C CNN
+F 3 "" H 5300 5450 50  0001 C CNN
+	1    5300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Supply:VCC #P+01
+U 1 1 5E0644D2
+P 5300 3650
+F 0 "#P+01" H 5300 3650 50  0001 C CNN
+F 1 "VCC" H 5300 3771 59  0000 C CNN
+F 2 "" H 5300 3650 50  0001 C CNN
+F 3 "" H 5300 3650 50  0001 C CNN
+	1    5300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:TL331 U1
+U 1 1 5E06970D
+P 4450 4550
+F 0 "U1" H 4791 4596 50  0000 L CNN
+F 1 "TL331" H 4791 4505 50  0000 L CNN
+F 2 "lib:SOT95P" H 4450 4550 50  0001 L BNN
+F 3 "" H 4450 4550 50  0001 C CNN
+	1    4450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4850 4450 5350
+Connection ~ 4450 5350
+Wire Wire Line
+	4450 4250 4450 3750
+Connection ~ 4450 3750
+Wire Wire Line
+	4450 5350 5300 5350
+Wire Wire Line
+	4200 5350 4450 5350
+Wire Wire Line
+	4000 5350 4450 5350
+Wire Wire Line
+	4000 4150 4000 4650
+Wire Wire Line
+	4450 3750 5300 3750
+Connection ~ 4000 4650
+Wire Wire Line
+	3650 3750 3650 4050
+Wire Wire Line
+	3650 3750 4000 3750
+$Comp
+L IR_Detector:PT334 Q1
+U 1 1 5E06ACC2
+P 3650 4350
+F 0 "Q1" H 3730 4496 50  0000 L CNN
+F 1 "PT334" H 3730 4405 50  0000 L CNN
+F 2 "lib:PT334" H 3650 4350 50  0001 L BNN
+F 3 "" H 3650 4350 50  0001 L BNN
+	1    3650 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 4450
+$Comp
+L IR_Detector:PT334 Q2
+U 1 1 5E06ADAD
+P 4000 4050
+F 0 "Q2" H 4080 4196 50  0000 L CNN
+F 1 "PT334" H 4080 4105 50  0000 L CNN
+F 2 "lib:PT334" H 4000 4050 50  0001 L BNN
+F 3 "" H 4000 4050 50  0001 L BNN
+	1    4000 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 3750
+Wire Wire Line
+	4000 3750 4450 3750
+Wire Wire Line
+	5650 4900 5650 5350
+Wire Wire Line
+	5650 5350 5300 5350
+Wire Wire Line
+	5300 3750 5650 3750
+Wire Wire Line
+	5650 3750 5650 4600
+Text Notes 4050 4100 0    50   ~ 0
+Ambient
+Text Notes 3750 4400 0    50   ~ 0
+Track
+Wire Wire Line
+	5300 4250 5300 4550
+Wire Wire Line
+	4750 4550 5300 4550
+Connection ~ 5300 4550
+Wire Wire Line
+	5300 4550 5300 4750
+Wire Wire Line
+	5650 4750 5300 4750
+Wire Wire Line
+	5300 4750 5300 4800
+Connection ~ 5300 4750
+$Comp
+L PAD:PADS +1
+U 1 1 5E9AC8EE
+P 5650 4600
+F 0 "+1" H 5650 4600 50  0000 L BNN
+F 1 "PADS" H 5700 4400 50  0001 L BNN
+F 2 "lib:SolderWirePad_1x01_Drill1mm" H 5650 4600 50  0001 C CNN
+F 3 "" H 5650 4600 50  0001 C CNN
+	1    5650 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L PAD:PADS O1
+U 1 1 5E9ADD5F
+P 5650 4750
+F 0 "O1" H 5650 4750 50  0000 L BNN
+F 1 "PADS" H 5700 4550 50  0001 L BNN
+F 2 "lib:SolderWirePad_1x01_Drill1mm" H 5650 4750 50  0001 C CNN
+F 3 "" H 5650 4750 50  0001 C CNN
+	1    5650 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L PAD:PADS GND1
+U 1 1 5E9AFA0F
+P 5650 4900
+F 0 "GND1" H 5650 4900 50  0000 L BNN
+F 1 "PADS" H 5700 4700 50  0001 L BNN
+F 2 "lib:SolderWirePad_1x01_Drill1mm" H 5650 4900 50  0001 C CNN
+F 3 "" H 5650 4900 50  0001 C CNN
+	1    5650 4900
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
