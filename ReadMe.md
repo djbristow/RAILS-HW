@@ -4,8 +4,10 @@
 # Version
 * 1.1.0 - 4/18/2020
 
-RAILS-HW conatins the hardware designs specifically supporting the RAILS project.
+RAILS-HW contains the hardware designs specifically supporting the RAILS project.
 For further information see http://kjcrr.org/rails
+
+The hardware designs were developed using KiCad. For further information see https://www.kicad-pcb.org
 
 ## License
 
@@ -21,5 +23,4 @@ For further information see http://kjcrr.org/rails
     See the License for the specific language governing permissions and
     limitations under the License.
 
-**NOTE**: This software depends on other packages that may be licensed under different open source licenses.
 
