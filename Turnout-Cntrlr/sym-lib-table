@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Turnout-Cntrlr-rescue)(type Legacy)(uri ${KIPRJMOD}/Turnout-Cntrlr-rescue.lib)(options "")(descr ""))
+)
