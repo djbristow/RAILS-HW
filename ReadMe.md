@@ -7,7 +7,7 @@
 RAILS-HW contains the hardware designs specifically supporting the RAILS project.
 For further information see http://kjcrr.org/rails
 
-The hardware designs were developed using KiCad. For further information see https://www.kicad-pcb.org
+The hardware designs were developed using KiCad. For further information see https://www.kicad.org
 
 ## License
 
